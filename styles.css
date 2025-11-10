@@ -1,79 +1,51 @@
-body{
+/* Estilos básicos para el blog de rugby - Versión simplificada */
+body {
     background-color: rgb(240, 240, 240);
     font-family: "Times New Roman", Times, serif;
     margin: 0;
     padding: 20px;
+    line-height: 1.6;
 }
 
-h1{
+h1, h2, h3 {
     color: rgb(0, 0, 139);
+}
+
+h1 {
     text-align: center;
 }
 
-h2{
-    color: rgb(0, 0, 139);
+h2 {
     border-bottom: 2px solid rgb(0, 0, 139);
     padding-bottom: 5px;
 }
 
-h3{
-    color: rgb(0, 0, 100);
-}
-
-p{
+p {
     text-align: justify;
-    font-size: 16px;
-    color: rgb(51, 51, 51);
-    line-height: 1.6;
 }
 
-#inicio p {
-    text-align: center;
-    font-size: 16px;
-    color: rgb(51, 51, 51);
-    line-height: 1.6;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-section > img:first-of-type{
-    display: block;
-    margin: 10px auto;
+img {
     max-width: 100%;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-ol {
-    padding-left: 40px;
-}
-
-.imagen-lista{
+.imagen-lista {
     width: 300px;
     height: 200px;
     object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .titulo-seccion {
     font-weight: bold;
-    font-size: 18px;
     color: rgb(0, 0, 139);
     text-decoration: none;
     display: block;
     margin-bottom: 10px;
 }
 
-.titulo-seccion:hover {
-    text-decoration: underline;
-    color: rgb(0, 0, 100);
-}
-
-/* Estilos para el menú desplegable */
+/* Navegación simplificada */
 .navbar {
-    position: relative;
-    display: inline-block;
     margin-bottom: 20px;
 }
 
@@ -84,17 +56,12 @@ ol {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-family: "Times New Roman", Times, serif;
-    font-size: 16px;
 }
 
 .menu-content {
     display: none;
-    position: absolute;
     background-color: white;
-    min-width: 160px;
     box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-    z-index: 1;
     border-radius: 5px;
 }
 
@@ -103,29 +70,23 @@ ol {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    font-family: "Times New Roman", Times, serif;
 }
 
 .menu-content a:hover {
     background-color: rgb(240, 240, 240);
 }
 
-/* Mostrar el menú cuando se hace hover */
 .navbar:hover .menu-content {
     display: block;
 }
 
-/* Estilos para las secciones de información */
+/* Secciones de información */
 .seccion-info {
     margin: 40px 0;
     padding: 20px;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-.seccion-info h2 {
-    margin-top: 0;
 }
 
 /* Botón de volver */
@@ -137,11 +98,8 @@ ol {
     color: white;
     text-decoration: none;
     border-radius: 5px;
-    font-family: "Times New Roman", Times, serif;
 }
 
 .boton-volver:hover {
     background-color: rgb(0, 0, 100);
 }
-
-
